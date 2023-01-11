@@ -16,19 +16,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+}
+
+.opaque.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,5);
+
+
 }
 
 .quotes-container {}
 
 .features-container {}
 
-/* block dividers*/
+/* block dividers */
 
 .block-divider {
     width: 75px;
     height: 5px;
     border: 0;
-    background-color: #eb4107;
+    
+}
+.block-divider--orange {
+    background-color: #f05f40;
+
+}
+.block-divider--short {
+    width: 35px;
+
 }
 
 /*jumbotron*/
@@ -52,5 +73,26 @@ body {
     font-size: 60%;
     font-style: italic;
     color: #d0d0d0;
+
+}
+
+/* buttons*/
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
 
 }

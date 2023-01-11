@@ -15,7 +15,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <div class="container-fluid navalert-container">
+        <div class="container-fluid alert-container">
+            <div class="row d-none d-sm-block">
+                <div class="col-12"></div>
+                <div class="site-wide-alert alert alert-warning">
+                    <strong>Sale Now On!</strong>We've got a sale on. Get 12-month subscription for
+                    the price of 6! <a href="">See here for details!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-dark navbar-expand-sm">
         <a href="/" class="navbar-brand">Whiskey Drop</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,41 +56,33 @@
         </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delevered to your door!</i></p>
-            <a href="/login">Sign In/Sign Up</a>
+            <a href="/login" class="btn btn--cta btn--red">Sign In/Sign Up</a>
 
         </div>
-        <!--</div>-->
+
     </nav>
-    <!-- <div class="container alert-container">
-        <div class="row d-none d-sm-block">
-            <div class="col-12"></div>
-            <div class="alert alert-warning">
-                <strong>Sale Now On!</strong>We've got a sale on. Get 12-month subscription for
-                the price of 6! <a href="">See here for details!</a>
+    </div>
+
+    <div class="container-fluid callout-container">
+        <!-- Callout -->
+        <div class="opaque-overlay">&nbsp;</div>
+        <div class="row">
+            <div class="col-12">
+                <section class="callout jumbotron text-center">
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class=" block-divider block-divider--orange">
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+                        <s class="d-none d-sm-inline">£19.99</s>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>First one is free!</mark></strong></p>
+                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign
+                        Up!</button>
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. please drink
+                            responsibly.</small></p>
+                </section>
             </div>
         </div>
-    </div>
-    </div> -->
-    <div class="container-fluid callout-container">
-    <!-- Callout -->
-    <div class="opaque-overlay">&nbsp;</div>
-    <div class="row">
-        <div class="col-12">
-            <section class="callout jumbotron text-center">
-                <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
-                <hr class=" block-divider block-divider--orange">
-                <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                    <s class="d-none d-sm-inline">£19.99</s>
-                    <span class="d-inline d-sm-none"><br></span>
-                    <strong><mark>First one is free!</mark></strong></p>
-                <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign
-                    Up!</button>
-                <p class="text-muted"><small>You must be over 18 to sign up to our service. please drink
-                        responsibly.</small></p>
-            </section>
-        </div>
-    </div>
-    <!-- .callout -->
+        <!-- .callout -->
     </div>
 
     <!-- Quotes -->
